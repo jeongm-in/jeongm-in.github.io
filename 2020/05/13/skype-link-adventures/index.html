@@ -4,8 +4,9 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Posts &middot; Jeong Min Lim</title>
-        <meta name="description" content="">
+        <title>Skype Link Adventures &middot; Jeong Min Lim</title>
+        <meta name="description" content="Suspicious link from a colleague This afternoon I received a couple of suspicious link s from my friends on Skype whom I didn&rsquo;t talk in ages. It was quite apparent that their accounts were compromised, and clicking the link would result in some unpleasant events.
+The Links These were the messages I received. The link contained URL-encoded &ldquo;HTTP://&rdquo; (%68%74%74%70%3A%2F%2F), so I could tell this is a link disguised as a Google search link.">
         <meta name="HandheldFriendly" content="True">
         <meta name="MobileOptimized" content="320"> <meta name="generator" content="Hugo 0.70.0" />
         <meta name="robots" content="index,follow">
@@ -63,48 +64,63 @@ if (!doNotTrack) {
 
             <div id="container">
 
-<div id="post-index" class="container">
+<div class="container">
+    <article class="post-container" itemscope="" itemtype="http://schema.org/BlogPosting">
+        <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Skype Link Adventures</h1>
     
-    <header class="post-header">
-        <h1 class="post-title" itemprop="name">Monopit.ch</h1>
-        <p></p>
-    </header>
+    <p class="post-date post-line">
+        <span>Published <time datetime="2020-05-13" itemprop="datePublished">Wed, May 13, 2020</time></span>
+        <span>by</span>
+        <span itemscope="" itemprop="author" itemtype="https://schema.org/Person">
+            <span itemprop="name">
+                <a href="#" itemprop="url" rel="author">Jeong Min Lim</a>
+            </span>
+        </span>
+    </p>
+    
+</header>
 
+        <div class="post-content clearfix" itemprop="articleBody">
+    
 
+    <h1 id="suspicious-link-from-a-colleague">Suspicious link from a colleague</h1>
+<p>This afternoon I received a couple of suspicious link s from my friends on Skype whom I didn&rsquo;t talk in ages. It was quite apparent that their accounts were compromised, and clicking the link would result in some unpleasant events.</p>
+<h2 id="the-links">The Links</h2>
+<p><img src="/images/skype-adventure/skype-adventure-link.png" alt=""></p>
+<p><img src="/images/skype-adventure/skype-adventure-link2.png" alt=""></p>
+<p>These were the messages I received. The link contained URL-encoded &ldquo;HTTP://&rdquo; (%68%74%74%70%3A%2F%2F), so I could tell this is a link disguised as a Google search link.</p>
+<h2 id="analysis">Analysis</h2>
+<p>I searched online to see if I can analyze suspicious links without actually visiting them myself. <a href="https://sucuri.net">sucuri.net</a> provided such services, so I ran the link through their interface.</p>
+<p><img src="/images/skype-adventure/skype-adventure-sucuri.png" alt=""></p>
+<p>Sucuri reported that the link redirects to a website called &ldquo;***your**cbd.&rdquo;</p>
+<p>I copied and visited the link in a virtual machine. Surely enough,  the link redirected to &ldquo;***your**cbd&rdquo; website.</p>
+<p><img src="/images/skype-adventure/skype-adventure-website.png" alt=""></p>
+<p>It is a static website advertising miraculous CBD gummies complete with a news article, testimonials and comments.</p>
+<p><img src="/images/skype-adventure/skype-adventure-comments.png" alt=""></p>
+<p>The comments were always posted within the last hour. Reply and Like buttons are just plaintext with colors. And every link on the website (even the share to SNS buttons) redirects to yet another site called &ldquo;***gummies&rdquo; where you can order a bottle of gummy for yourself.</p>
+<p><img src="/images/skype-adventure/skype-adventure-link3.png" alt=""></p>
+<p>The website had a timer to give a sense of urgency, so I decided to see what happens when the timer expires.</p>
+<p><img src="/images/skype-adventure/skype-adventure-anticlimactic.png" alt=""></p>
+<p>But sadly, nothing happened.</p>
 
-    <ol class="post-list">
-        
-        
-            <li class="post-stub" itemprop="blogPost" itemscope="" itemtype="https://schema.org/BlogPosting">
-    <a href="https://jeongm-in.github.io/2020/05/13/skype-link-adventures/" itemprop="url" title="Go to post detail">
-        <h4 class="post-stub-title" itemprop="name">Skype Link Adventures</h4>
-        <time class="post-stub-date" datetime="2020-05-13">Published Wed, May 13, 2020</time>
-        
-    </a>
-</li>
-        
-            <li class="post-stub" itemprop="blogPost" itemscope="" itemtype="https://schema.org/BlogPosting">
-    <a href="https://jeongm-in.github.io/2020/05/08/second-post/" itemprop="url" title="Go to post detail">
-        <h4 class="post-stub-title" itemprop="name">Second Post</h4>
-        <time class="post-stub-date" datetime="2020-05-08">Published Fri, May 8, 2020</time>
-        
-    </a>
-</li>
-        
-            <li class="post-stub" itemprop="blogPost" itemscope="" itemtype="https://schema.org/BlogPosting">
-    <a href="https://jeongm-in.github.io/2020/05/08/hello/" itemprop="url" title="Go to post detail">
-        <h4 class="post-stub-title" itemprop="name">Hello World</h4>
-        <time class="post-stub-date" datetime="2020-05-08">Published Fri, May 8, 2020</time>
-        
-    </a>
-</li>
-        
-    </ol>
+</div>
 
-    <div class="post-navigation">
+        <footer class="post-footer clearfix">
+    
+
+    <div class="share">
         
 
+        
+
+        
+        
     </div>
+</footer>
+
+        
+    </article>
 </div>
 
             </div>
@@ -136,3 +152,4 @@ if (!doNotTrack) {
         <script src="https://jeongm-in.github.io/js/scripts.js"></script>
     </body>
 </html>
+

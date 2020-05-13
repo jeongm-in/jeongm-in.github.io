@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Jeong Min Lim</copyright>
-    <lastBuildDate>Fri, 08 May 2020 16:11:20 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 13 May 2020 12:11:56 -0500</lastBuildDate>
     
 	<atom:link href="https://jeongm-in.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Skype Link Adventures</title>
+      <link>https://jeongm-in.github.io/2020/05/13/skype-link-adventures/</link>
+      <pubDate>Wed, 13 May 2020 12:11:56 -0500</pubDate>
+      
+      <guid>https://jeongm-in.github.io/2020/05/13/skype-link-adventures/</guid>
+      <description>Suspicious link from a colleague This afternoon I received a couple of suspicious link s from my friends on Skype whom I didn&amp;rsquo;t talk in ages. It was quite apparent that their accounts were compromised, and clicking the link would result in some unpleasant events.
+The Links These were the messages I received. The link contained URL-encoded &amp;ldquo;HTTP://&amp;rdquo; (%68%74%74%70%3A%2F%2F), so I could tell this is a link disguised as a Google search link.</description>
+    </item>
     
     <item>
       <title>Second Post</title>
