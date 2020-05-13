@@ -23,15 +23,6 @@ The Links These were the messages I received. The link contained URL-encoded &am
     </item>
     
     <item>
-      <title>Second Post</title>
-      <link>https://jeongm-in.github.io/2020/05/08/second-post/</link>
-      <pubDate>Fri, 08 May 2020 16:11:20 -0500</pubDate>
-      
-      <guid>https://jeongm-in.github.io/2020/05/08/second-post/</guid>
-      <description>Second post test</description>
-    </item>
-    
-    <item>
       <title>About</title>
       <link>https://jeongm-in.github.io/page/about/</link>
       <pubDate>Fri, 08 May 2020 14:31:26 -0500</pubDate>
@@ -48,7 +39,7 @@ You can see my portfolio at https://jeongm.in</description>
       <pubDate>Fri, 08 May 2020 14:28:09 -0500</pubDate>
       
       <guid>https://jeongm-in.github.io/2020/05/08/hello/</guid>
-      <description>Hello Very first post.</description>
+      <description>Hello Very first post. This blog is a journal of random entries.</description>
     </item>
     
   </channel>
