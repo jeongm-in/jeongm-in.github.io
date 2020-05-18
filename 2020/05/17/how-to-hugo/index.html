@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>How to Hugo &middot; Jeong Min Lim</title>
+        <meta name="description" content="Introduction After graduating from college, I finally decided to start a blog / journal to record my miscellaneous adventures and life stories. I have tried many blog services before, such as WordPress, Blogger, and Tistory (Korean blogging platform), but every blog ended up neglected and abandoned.
+This time around, I wanted to build my own website instead of relying on the readily available blog platforms. While searching around for for static site generators (SSG), I had two candidates: Jekyll and Hugo.">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320"> <meta name="generator" content="Hugo 0.70.0" />
+        <meta name="robots" content="index,follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link rel="stylesheet" href="https://jeongm-in.github.io/dist/site.css">
+        <link rel="stylesheet" href="https://jeongm-in.github.io/dist/syntax.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300&subset=latin,cyrillic-ext,latin-ext,cyrillic">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">    
+    </head>
+
+    <body>
+        
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'XXX', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+        <div id="wrapper">
+            <header class="site-header">
+                <div class="container">
+                    <div class="site-title-wrapper">
+                        
+                        <h1 class="site-title">
+                            <a title="MonoPit.ch" href="https://jeongm-in.github.io/">MonoPit.ch</a>
+                        </h1>
+                             
+                        <a class="button-square button-social hint--top" data-hint="Github" title="Github" href="https://github.com/jeongm-in" rel="me">
+                            <i class="fa fa-github-alt"></i>
+                        </a>
+                           
+                    </div>
+
+                    <ul class="site-nav">
+                        
+    <li class="site-nav-item">
+        <a title="Blog" href="/">Blog</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="About" href="/page/about/">About</a>
+    </li>
+
+                    </ul>
+                </div>
+            </header>
+
+            <div id="container">
+
+<div class="container">
+    <article class="post-container" itemscope="" itemtype="http://schema.org/BlogPosting">
+        <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">How to Hugo</h1>
+    
+    <p class="post-date post-line">
+        <span>Published <time datetime="2020-05-17" itemprop="datePublished">Sun, May 17, 2020</time></span>
+        <span>by</span>
+        <span itemscope="" itemprop="author" itemtype="https://schema.org/Person">
+            <span itemprop="name">
+                <a href="#" itemprop="url" rel="author">Jeong Min Lim</a>
+            </span>
+        </span>
+    </p>
+    
+</header>
+
+        <div class="post-content clearfix" itemprop="articleBody">
+    
+
+    <h2 id="introduction">Introduction</h2>
+<p>After graduating from college, I finally decided to start a blog / journal to record my miscellaneous adventures and life stories. I have tried many blog services before, such as WordPress, Blogger, and Tistory (Korean blogging platform), but every blog ended up neglected and abandoned.</p>
+<p>This time around, I wanted to build my own website instead of relying on the readily available blog platforms. While searching around for for static site generators (SSG), I had two candidates: Jekyll and Hugo. Jekyll is a SSG based on Ruby, closely tied with GitHub. Hugo on the other hand is written in Go, and I found many first-hand testimonials that Hugo is faster than Jekyll. Although I didn&rsquo;t expect myself to create much content to need the &ldquo;fast build speed,&rdquo; I thought it would be worth while to learn a completely new framework. Thus began my Hugo journeys.</p>
+<h2 id="installation">Installation</h2>
+<p>In order to use Hugo, you must install Hugo on your machine. I have <a href="https://chocolatey.org/">chocolatey</a> on my computer, so I used choco to install Hugo.</p>
+<pre><code>choco install hugo-extended -confirm
+</code></pre><p>Note that &ldquo;hugo-extended&rdquo; should be installed for the Sass/SCSS support, which is required for some themes.</p>
+<p>After that, navigate to a directory of your choice and run:</p>
+<pre><code>hugo new site &lt;site name&gt;
+</code></pre><p>Now you&rsquo;re good to go.</p>
+<h2 id="themes">Themes</h2>
+<p>Browse the <a href="https://themes.gohugo.io/">Hugo Themes website</a> to find a theme. Each theme has installation guide on its theme page. In general, the theme package should go under the <code>theme</code> directory of your hugo base directory.</p>
+<p>After downloading the theme, copy the <code>config.yaml/toml</code> from the theme directory and move it to the <code>config.yaml/toml</code> of the base hugo directory. Edit the options as you please. This allows a lot of additional customization, which I think is very useful.</p>
+<h2 id="now-what">Now what?</h2>
+<p>Now you see that there are many directories under your hugo base directory. I will go over those with brief explanations.</p>
+<h3 id="page">page</h3>
+<p>page is mostly used for a static single pages. I used it for the &ldquo;About&rdquo; section.</p>
+<h3 id="post">post</h3>
+<p>post is for your blog/article posts.</p>
+<p>For new contents, type <code>hugo new post/&lt;new-post&gt;.md</code>. This will create a new <code>.md</code> file named <code>&lt;new-post&gt;</code> under the <code>post</code> directory. Hugo will later render the contents of this markdown file to a static page. Refer to the theme&rsquo;s sample website directory to get an idea of what should go in the &ldquo;front matter,&rdquo; which is the <code>yaml/toml</code> block at the top of the post markdown file.</p>
+<p>For example, this website uses the following front matter:</p>
+<pre><code>---
+title: &quot;How to Hugo&quot;
+date: 2020-05-17T20:25:30-05:00
+draft: false
+---
+</code></pre><h3 id="layouts">layouts</h3>
+<p>layouts directory is used for the templates of your website.</p>
+<p>You can also customize the themes by editing the contents of the <code>html</code> files inside the <code>layouts</code> directory. Anything in your base hugo directory will override files within the theme directory. The <code>layouts</code> are basically a <code>html</code> file templates where you can use Go functions to squeeze in the contents of the markdown files. It was a little intimidating at first, but this feature really opens up a lot for customization.</p>
+<h3 id="layoutspartials">layouts/partials</h3>
+<p>partials are basically shortcodes that can be used for rendering small html elements. You can insert partials in your layout files, so that you can achieve a modular design. In my portfolio website, I made a partial called &ldquo;project-card&rdquo; that renders html card element from the input data. A template in the layouts directory will then iterate over the <code>yaml</code> data and pass each data entry to this partial to render a bunch of cards.</p>
+<pre><code>&lt;div class=&quot;project-card&quot;&gt;
+    &lt;div class=&quot;project-line&quot;&gt;
+        &lt;div class=&quot;project-title&quot;&gt;
+            &lt;b&gt;{{.title}}&lt;/b&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;project-when&quot;&gt;
+            {{.when}}
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;project-line&quot;&gt;
+        &lt;div class=&quot;project-stack&quot;&gt;
+            Stack: {{delimit .stack &quot;, &quot;}}
+
+        &lt;/div&gt;
+        &lt;div class=&quot;project-link&quot;&gt;
+            {{if .link}}
+            &lt;a href=&quot;{{ .link }}&quot;&gt;&lt;i class=&quot;fas fa-link&quot;&gt;&lt;/i&gt;&lt;/a&gt; {{end}}
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;project-description&quot;&gt;
+        {{.description}}
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre><h3 id="resources">resources</h3>
+<p>resources is a directory for media resources such as image and video. I created a subdirectory called <code>images</code> to store my image files. To link the files, you can just use <code>images/&lt;file-name&gt;</code> directly.</p>
+<h3 id="data">data</h3>
+<p>this website does not have a data directory, but you can create one if you need. You can store a data files in <code>json/yaml/toml</code> formats that could be used else where in your website.</p>
+<h2 id="how-to-test-the-website">How to test the website</h2>
+<p>Once you have everything set up, simply run <code>hugo server -D</code> and visit <code>http://localhost:1313</code>.</p>
+<p>Note that the <code>-D</code> flag includes content marked as draft.</p>
+<h2 id="how-to-deploy">How to deploy</h2>
+<p>After editing your post, run <code>hugo</code> to build your website. It&rsquo;s as simple as that. The rendered website will be placed under the <code>public</code> directory. Upload the contents of the <code>public</code> directory to a hosting service of your choice, and you are good to go. I have two hugo-generated websites, one hosted on AWS S3/CloudFront, and another hosted on GitHub pages. I will make a separate post on my experience with those two services soon.</p>
+
+</div>
+
+        <footer class="post-footer clearfix">
+    
+
+    <div class="share">
+        
+
+        
+
+        
+        
+    </div>
+</footer>
+
+        
+    </article>
+</div>
+
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="site-title-wrapper">
+                    <h1 class="site-title">
+                        <a title="MonoPit.ch" href="https://jeongm-in.github.io/">MonoPit.ch</a>
+                    </h1>
+                    <a class="button-square button-jump-top js-jump-top" href="#">
+                        <i class="fa fa-angle-up"></i>
+                    </a>
+                </div>
+
+                <p class="footer-copyright">
+                    <span>&copy; 2020 / Powered by <a href="https://gohugo.io/">Hugo</a></span>
+                </p>
+                <p class="footer-copyright">
+                    <span><a href="https://github.com/roryg/ghostwriter">Ghostwriter theme</a> By <a href="http://jollygoodthemes.com">JollyGoodThemes</a></span>
+                    <span>/ <a href="https://github.com/jbub/ghostwriter">Ported</a> to Hugo By <a href="https://github.com/jbub">jbub</a></span>
+                </p>
+            </div>
+        </footer>
+
+        <script src="https://jeongm-in.github.io/js/jquery-1.11.3.min.js"></script>
+        <script src="https://jeongm-in.github.io/js/jquery.fitvids.js"></script>
+        <script src="https://jeongm-in.github.io/js/scripts.js"></script>
+    </body>
+</html>
+
