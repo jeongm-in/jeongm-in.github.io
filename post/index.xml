@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Jeong Min Lim</copyright>
-    <lastBuildDate>Sun, 17 May 2020 20:25:30 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 17 May 2020 20:58:43 -0500</lastBuildDate>
     
 	<atom:link href="https://jeongm-in.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Tools I Use</title>
+      <link>https://jeongm-in.github.io/2020/05/17/tools-i-use/</link>
+      <pubDate>Sun, 17 May 2020 20:58:43 -0500</pubDate>
+      
+      <guid>https://jeongm-in.github.io/2020/05/17/tools-i-use/</guid>
+      <description>I reset my phone and my computer biannually. The reset itself is not very difficult; all I need to do is just back up my data and wipe the disk using Windows installation media. The annoying part, however, is reinstalling all my applications and software. Because I dread visiting all the download pages and running the executables myself, I tried many alternative methods, from keeping copies of the installers in a separate thumb drive to package managers such as Chocolatey.</description>
+    </item>
     
     <item>
       <title>How to Hugo</title>
