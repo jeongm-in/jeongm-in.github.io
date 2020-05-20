@@ -19,7 +19,7 @@
       
       <guid>https://jeongm-in.github.io/2020/05/17/how-to-hugo/</guid>
       <description>Introduction After graduating from college, I finally decided to start a blog / journal to record my miscellaneous adventures and life stories. I have tried many blog services before, such as WordPress, Blogger, and Tistory (Korean blogging platform), but every blog ended up neglected and abandoned.
-This time around, I wanted to build my own website instead of relying on the readily available blog platforms. While searching around for for static site generators (SSG), I had two candidates: Jekyll and Hugo.</description>
+This time around, I wanted to build my website instead of relying on the readily available blog platforms. While searching around for static site generators (SSG), I had two candidates: Jekyll and Hugo.</description>
     </item>
     
     <item>

@@ -6,7 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>How to Hugo &middot; Jeong Min Lim</title>
         <meta name="description" content="Introduction After graduating from college, I finally decided to start a blog / journal to record my miscellaneous adventures and life stories. I have tried many blog services before, such as WordPress, Blogger, and Tistory (Korean blogging platform), but every blog ended up neglected and abandoned.
-This time around, I wanted to build my own website instead of relying on the readily available blog platforms. While searching around for for static site generators (SSG), I had two candidates: Jekyll and Hugo.">
+This time around, I wanted to build my website instead of relying on the readily available blog platforms. While searching around for static site generators (SSG), I had two candidates: Jekyll and Hugo.">
         <meta name="HandheldFriendly" content="True">
         <meta name="MobileOptimized" content="320"> <meta name="generator" content="Hugo 0.70.0" />
         <meta name="robots" content="index,follow">
@@ -86,7 +86,7 @@ if (!doNotTrack) {
 
     <h2 id="introduction">Introduction</h2>
 <p>After graduating from college, I finally decided to start a blog / journal to record my miscellaneous adventures and life stories. I have tried many blog services before, such as WordPress, Blogger, and Tistory (Korean blogging platform), but every blog ended up neglected and abandoned.</p>
-<p>This time around, I wanted to build my own website instead of relying on the readily available blog platforms. While searching around for for static site generators (SSG), I had two candidates: Jekyll and Hugo. Jekyll is a SSG based on Ruby, closely tied with GitHub. Hugo on the other hand is written in Go, and I found many first-hand testimonials that Hugo is faster than Jekyll. Although I didn&rsquo;t expect myself to create much content to need the &ldquo;fast build speed,&rdquo; I thought it would be worth while to learn a completely new framework. Thus began my Hugo journeys.</p>
+<p>This time around, I wanted to build my website instead of relying on the readily available blog platforms. While searching around for static site generators (SSG), I had two candidates: Jekyll and Hugo. Jekyll is an SSG based on Ruby, closely tied with GitHub. Hugo, on the other hand, is written in Go, and I found many first-hand testimonials that Hugo is faster than Jekyll. Although I didn&rsquo;t expect myself to create much content to need the &ldquo;fast build speed,&rdquo; I thought it would be worthwhile to learn an entirely new framework. Thus began my Hugo journeys.</p>
 <h2 id="installation">Installation</h2>
 <p>In order to use Hugo, you must install Hugo on your machine. I have <a href="https://chocolatey.org/">chocolatey</a> on my computer, so I used choco to install Hugo.</p>
 <pre><code>choco install hugo-extended -confirm
@@ -95,12 +95,12 @@ if (!doNotTrack) {
 <pre><code>hugo new site &lt;site name&gt;
 </code></pre><p>Now you&rsquo;re good to go.</p>
 <h2 id="themes">Themes</h2>
-<p>Browse the <a href="https://themes.gohugo.io/">Hugo Themes website</a> to find a theme. Each theme has installation guide on its theme page. In general, the theme package should go under the <code>theme</code> directory of your hugo base directory.</p>
-<p>After downloading the theme, copy the <code>config.yaml/toml</code> from the theme directory and move it to the <code>config.yaml/toml</code> of the base hugo directory. Edit the options as you please. This allows a lot of additional customization, which I think is very useful.</p>
+<p>Browse the <a href="https://themes.gohugo.io/">Hugo Themes website</a> to find a theme. Each theme has an installation guide on its theme page. In general, the theme package should go under the <code>theme</code> directory of your hugo base directory.</p>
+<p>After downloading the theme, copy the <code>config.yaml/toml</code> from the theme directory and move it to the <code>config.yaml/toml</code> of the base hugo directory. Edit the options as you please.</p>
 <h2 id="now-what">Now what?</h2>
 <p>Now you see that there are many directories under your hugo base directory. I will go over those with brief explanations.</p>
 <h3 id="page">page</h3>
-<p>page is mostly used for a static single pages. I used it for the &ldquo;About&rdquo; section.</p>
+<p>page is mostly used for static single pages. I used it for the &ldquo;About&rdquo; section.</p>
 <h3 id="post">post</h3>
 <p>post is for your blog/article posts.</p>
 <p>For new contents, type <code>hugo new post/&lt;new-post&gt;.md</code>. This will create a new <code>.md</code> file named <code>&lt;new-post&gt;</code> under the <code>post</code> directory. Hugo will later render the contents of this markdown file to a static page. Refer to the theme&rsquo;s sample website directory to get an idea of what should go in the &ldquo;front matter,&rdquo; which is the <code>yaml/toml</code> block at the top of the post markdown file.</p>
@@ -112,7 +112,7 @@ draft: false
 ---
 </code></pre><h3 id="layouts">layouts</h3>
 <p>layouts directory is used for the templates of your website.</p>
-<p>You can also customize the themes by editing the contents of the <code>html</code> files inside the <code>layouts</code> directory. Anything in your base hugo directory will override files within the theme directory. The <code>layouts</code> are basically a <code>html</code> file templates where you can use Go functions to squeeze in the contents of the markdown files. It was a little intimidating at first, but this feature really opens up a lot for customization.</p>
+<p>You can also customize the themes by editing the contents of the <code>html</code> files inside the <code>layouts</code> directory. Anything in your base hugo directory will override files within the theme directory. The <code>layouts</code> are a <code>html</code> file templates where you can use Go functions to squeeze in the contents of the markdown files. It was a little intimidating at first, but this feature really opens up a lot for customization.</p>
 <h3 id="layoutspartials">layouts/partials</h3>
 <p>partials are basically shortcodes that can be used for rendering small html elements. You can insert partials in your layout files, so that you can achieve a modular design. In my portfolio website, I made a partial called &ldquo;project-card&rdquo; that renders html card element from the input data. A template in the layouts directory will then iterate over the <code>yaml</code> data and pass each data entry to this partial to render a bunch of cards.</p>
 <pre><code>&lt;div class=&quot;project-card&quot;&gt;
@@ -139,12 +139,12 @@ draft: false
     &lt;/div&gt;
 &lt;/div&gt;
 </code></pre><h3 id="resources">resources</h3>
-<p>resources is a directory for media resources such as image and video. I created a subdirectory called <code>images</code> to store my image files. To link the files, you can just use <code>images/&lt;file-name&gt;</code> directly.</p>
+<p>resources is a directory for media resources such as images and videos. I created a subdirectory called <code>images</code> to store my image files. To link the files, you can just use <code>images/&lt;file-name&gt;</code> directly.</p>
 <h3 id="data">data</h3>
-<p>this website does not have a data directory, but you can create one if you need. You can store a data files in <code>json/yaml/toml</code> formats that could be used else where in your website.</p>
+<p>this website does not have a data directory, but you can create one if you need. You can store a data files in <code>json/yaml/toml</code> formats that could be used elsewhere in your website.</p>
 <h2 id="how-to-test-the-website">How to test the website</h2>
 <p>Once you have everything set up, simply run <code>hugo server -D</code> and visit <code>http://localhost:1313</code>.</p>
-<p>Note that the <code>-D</code> flag includes content marked as draft.</p>
+<p>Note that the <code>-D</code> flag includes content marked as a draft.</p>
 <h2 id="how-to-deploy">How to deploy</h2>
 <p>After editing your post, run <code>hugo</code> to build your website. It&rsquo;s as simple as that. The rendered website will be placed under the <code>public</code> directory. Upload the contents of the <code>public</code> directory to a hosting service of your choice, and you are good to go. I have two hugo-generated websites, one hosted on AWS S3/CloudFront, and another hosted on GitHub pages. I will make a separate post on my experience with those two services soon.</p>
 
