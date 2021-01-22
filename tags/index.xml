@@ -6,10 +6,6 @@
     <description>Recent content in Tags on MonoPit.ch</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Jeong Min Lim</copyright>
-    
-	<atom:link href="https://jeongm-in.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <copyright>Jeong Min Lim</copyright><atom:link href="https://jeongm-in.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
